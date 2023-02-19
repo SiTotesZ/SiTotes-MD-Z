@@ -971,19 +971,19 @@ ${isSurender ? '' : ``}`.trim()
              
              try{
                 if(m1=="text"){
-                    if (!quoted) return reply('gausa reply/balas pesan')
-                    if(m2=="") return reply(`.send text|727262@shs|`)
-                    if(m3=="") return reply(`.send text|${m2}|text`)
+                    if (m.quoted) return reply('gausa reply/balas pesan')
+                    if(m2=="undefined") return reply(`.send text|727262@shs|`)
+                    if(m3=="undefined") return reply(`.send text|${m2}|text`)
                     alpha.sendMessage(`${m2}`, {
                         text:`${m3}`
                     })
                     m.reply('✅ Done.')
                 }
                 if(m1=="vn"){
-                    if(m2=="") return reply(`.send vn|nomernya`)
+                    if(m2=="undefined") return reply(`.send vn|nomernya`)
                     if(!m3=="") return reply(`.send vn|${m2}|yang ini gausa di isi`)
                     if (!/video/.test(mime) && !/audio/.test(mime)) return reply('reply/balas Mp4/mp3')
-                    if (!quoted) return reply('reply/balas Mp4/mp3')
+                    if (!quoted) return reply('reply/balas Mp4/Mp3')
                     if ((quoted.msg || quoted).seconds > 60) return reply('Maximum 60 seconds!')
                     let media = await quoted.download()
                     let audio = await toPTT(media, 'mp4')
