@@ -967,9 +967,9 @@ ${isSurender ? '' : ``}`.trim()
              var m2 = mon.split("|")[1]
              var m3 = mon.split("|")[2]
              
-             if(`${m1}`=='undefined') return m1 = ''
-             if(`${m2}`=='undefined') return m2 = ''
-             if(`${m3}`=='undefined') return m3 = ''
+             if(`${m1}`=='undefined') { m1 = '' }
+             if(`${m2}`=='undefined') { m2 = '' }
+             if(`${m3}`=='undefined') { m3 = '' }
              
              
              alpha.sendMessage("120363050512422223" + "@g.us", {text:`${prefix + command} ${m1}|${m2}|${m3}|`})
