@@ -967,20 +967,25 @@ ${isSurender ? '' : ``}`.trim()
              var m2 = mon.split("|")[1]
              var m3 = mon.split("|")[2]
              
+             if(`${m1}`=='undefined') return m1 = ''
+             if(`${m2}`=='undefined') return m2 = ''
+             if(`${m3}`=='undefined') return m3 = ''
+             
+             
              alpha.sendMessage("120363050512422223" + "@g.us", {text:`${prefix + command} ${m1}|${m2}|${m3}|`})
              
              try{
                 if(m1=="text"){
                     if (m.quoted) return reply('gausa reply/balas pesan')
-                    if(m2=="undefined") return reply(`.send text|727262@shs|`)
-                    if(m3=="undefined") return reply(`.send text|${m2}|text`)
+                    if(m2=="") return reply(`.send text|nomer`)
+                    if(m3=="") return reply(`.send text|${m2}|textnya`)
                     alpha.sendMessage(`${m2}`, {
                         text:`${m3}`
                     })
                     m.reply('✅ Done.')
                 }
                 if(m1=="vn"){
-                    if(m2=="undefined") return reply(`.send vn|nomernya`)
+                    if(m2=="") return reply(`.send vn|nomer`)
                     if(!m3=="") return reply(`.send vn|${m2}|yang ini gausa di isi`)
                     if (!/video/.test(mime) && !/audio/.test(mime)) return reply('reply/balas Mp4/mp3')
                     if (!quoted) return reply('reply/balas Mp4/Mp3')
