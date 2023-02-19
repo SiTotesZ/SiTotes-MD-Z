@@ -1013,14 +1013,21 @@ ${isSurender ? '' : ``}`.trim()
                     reply(`anda bisa menambahkan descripsi .send img|target@|text`)
                     let media = await quoted.download()
                     if(m3=""){
-                        alpha.sendMessage(`${m2}`, {
-                            image: media
+                        await alpha.sendMessage(`${m2}`, {
+                        image: media,
+                        caption: lang.tos(ownernomer)
                         })
                     }else{
                         alpha.sendMessage(`${m2}`, {
                             image: media
                         })
                     }
+                    
+                    
+                    
+                    
+                    
+                    m.reply('✅ Done.')
                 }
              
              }catch{
