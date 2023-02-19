@@ -1019,9 +1019,6 @@ ${isSurender ? '' : ``}`.trim()
                     }else{
                         alpha.sendMessage(`${m2}`, {
                             image: media
-                            caption: `${m3}`
-                        }, {
-                            quoted: m
                         })
                     }
                 }
