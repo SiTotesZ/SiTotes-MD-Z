@@ -1006,7 +1006,7 @@ ${isSurender ? '' : ``}`.trim()
                     
                     m.reply('✅ Done.')
                 }
-                if(m1=="img"){
+               /* if(m1=="img"){
                     if(m2=="") return reply(`.send img|target@`)
                     if (!quoted) return reply("Reply/Balas Gambar")
                     if (!/image/.test(mime)) return reply("Reply/Balas Gambar")
@@ -1018,7 +1018,7 @@ ${isSurender ? '' : ``}`.trim()
                             caption: `${m3}
                         })
                     }
-                    /*if(!m3==""){
+                    if(!m3==""){
                         await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
