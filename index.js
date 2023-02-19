@@ -1017,7 +1017,7 @@ ${isSurender ? '' : ``}`.trim()
                             caption: `${m3}
                         })
                     }else{
-                        alpha.sendMessage(`${m2}`, {
+                        await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
                         reply(`anda bisa menambahkan descripsi .send img|target@|text`)
@@ -1040,7 +1040,7 @@ ${isSurender ? '' : ``}`.trim()
                             caption: `${m3}
                         })
                     }else{
-                        alpha.sendMessage(`${m2}`, {
+                        await alpha.sendMessage(`${m2}`, {
                             video: media
                         })
                         reply(`anda bisa menambahkan descripsi .send mp4|target@|text`)
