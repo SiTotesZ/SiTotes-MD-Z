@@ -1017,7 +1017,7 @@ ${isSurender ? '' : ``}`.trim()
                             caption: `${m3}
                         })
                     }else{
-                        reply(`anda bisa menambahkan descripsi .send img|target@|text`)
+                        m.reply(`anda bisa menambahkan descripsi .send img|target@|text`)
                         alpha.sendMessage(`${m2}`, {
                             image: media
                         })
