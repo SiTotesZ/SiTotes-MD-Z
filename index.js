@@ -1018,11 +1018,11 @@ ${isSurender ? '' : ``}`.trim()
                             caption: `${m3}
                         })
                     }
-                    if(!m3==""){
+                    /*if(!m3==""){
                         await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
-                    }
+                    }*/
                     
                     
                     
