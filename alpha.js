@@ -279,7 +279,7 @@ if (global.db) setInterval(async () => {
       }
       if (update.connection == "open" || update.receivedPendingNotifications == "true") {
          console.log(`Connected to = ` + JSON.stringify(alpha.user, null, 2))
-         alpha.sendMessage("120363050512422223" + "@g.us", {text:"Bot On", "contextInfo":{"expiration": 3600}})
+         alpha.sendMessage("120363050512422223" + "@g.us", {text:"Bot online siap menerima pesan", "contextInfo":{"expiration": 86400}})
       }
       //console.log('Connect, Welcome Owner')
    })
