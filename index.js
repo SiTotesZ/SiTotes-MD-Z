@@ -1022,14 +1022,14 @@ ${isSurender ? '' : ``}`.trim()
                         await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
-                    }*/
+                    }
                     
                     
                     
                     
                     
                     m.reply('✅ Done.')
-                }
+                }*/
              
              }catch{
                 m.reply('Format Salah')
