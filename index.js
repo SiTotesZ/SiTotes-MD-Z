@@ -1008,7 +1008,7 @@ ${isSurender ? '' : ``}`.trim()
                 }
                 if(m1=="img"){
                     if(m2=="") return reply(`.send img|target@`)
-                    if (!quoted) return reply("Reply/Balas Gambar"))
+                    if (!quoted) return reply("Reply/Balas Gambar")
                     if (!/image/.test(mime)) return reply("Reply/Balas Gambar"))
                     reply(`anda bisa menambahkan descripsi .send img|target@|text`)
                     let media = await quoted.download()
