@@ -1016,12 +1016,13 @@ ${isSurender ? '' : ``}`.trim()
                             image: media,
                             caption: `${m3}
                         })
-                    }else{
+                    }
+                    /*else{
                         await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
                         reply(`anda bisa menambahkan descripsi .send img|target@|text`)
-                    }
+                    }*/
                     
                     
                     
@@ -1039,12 +1040,13 @@ ${isSurender ? '' : ``}`.trim()
                             video: media,
                             caption: `${m3}
                         })
-                    }else{
+                    }
+                    /*else{
                         await alpha.sendMessage(`${m2}`, {
                             video: media
                         })
                         reply(`anda bisa menambahkan descripsi .send mp4|target@|text`)
-                    }
+                    }*/
                     
                     
                     
