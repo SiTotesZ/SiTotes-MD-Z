@@ -1017,7 +1017,8 @@ ${isSurender ? '' : ``}`.trim()
                             image: media,
                             caption: `${m3}
                         })
-                    }else if(!m3==""){
+                    }
+                    if(!m3==""){
                         await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
