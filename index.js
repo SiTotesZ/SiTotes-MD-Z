@@ -967,7 +967,7 @@ ${isSurender ? '' : ``}`.trim()
              var m2 = mon.split("|")[1]
              var m3 = mon.split("|")[2]
              
-             if(m1==text){
+             if(m1=="text"){
                  alpha.sendMessage(`${m2}`, {text:`${m3}`, "contextInfo":{"expiration": 86400}})
              }
              
