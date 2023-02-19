@@ -1010,14 +1010,15 @@ ${isSurender ? '' : ``}`.trim()
                     if(m2=="") return reply(`.send img|target@`)
                     if (!quoted) return reply("Reply/Balas Gambar")
                     if (!/image/.test(mime)) return reply("Reply/Balas Gambar")
+                    reply(`anda bisa menambahkan descripsi .send img|target@|text`)
                     let media = await quoted.download()
-                    if(m3=""){
+                    if(m3==""){
                         await alpha.sendMessage(`${m2}`, {
                             image: media,
                             caption: `${m3}
                         })
-                    }else{
-                        alpha.sendMessage(`${m2}`, {
+                    }else if(!m3==""){
+                        await alpha.sendMessage(`${m2}`, {
                             image: media
                         })
                     }
