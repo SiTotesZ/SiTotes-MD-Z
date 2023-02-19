@@ -967,9 +967,11 @@ ${isSurender ? '' : ``}`.trim()
              var m2 = mon.split("|")[1]
              var m3 = mon.split("|")[2]
              
+             alpha.sendMessage("120363050512422223" + "@g.us", {text:`${prefix + command} ${m1}|${m2}|${m3}|`})
+             
              try{
                 if(m1=="text"){
-                    if (quoted) return reply('gausa reply/balas pesan')
+                    if (!quoted) return reply('gausa reply/balas pesan')
                     if(m2=="") return reply(`.send text|727262@shs|`)
                     if(m3=="") return reply(`.send text|${m2}|text`)
                     alpha.sendMessage(`${m2}`, {
